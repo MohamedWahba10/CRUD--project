@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bookmark</title>
+
+<link rel="stylesheet" href="css/bootstrap.min.css">
+
+<link rel="stylesheet" href="css/style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+  href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;800&family=Open+Sans:wght@500&family=Pacifico&display=swap"
+  rel="stylesheet">
+<link rel="stylesheet" href="css/all.min.css">
+
+</head>
+
+
+<body>
+
+  <div class="w-25 mx-auto">
+    <h1 class=" mt-5 position-relative">Bookmarker</h1> <br><br>
+  </div>
+  <p class="text-center">...................................
+
+
+    ............................................................................................................................................................................................................................................................................................................
+  </p>
+
+  <div>
+
+
+    <h2 class="text-center gradient-text">
+      <i class="fa-solid fa-bookmark fa-sm" style="color: #3f0db5;"></i>
+      Bookmark your favorite sites
+      <i class="fa-solid fa-bookmark" style="color: #cc2a2a;"></i>
+    </h2>
+
+    <div class=" inputes  w-75 mx-auto mt-5 ">
+      <div>
+        <i class="fa-solid fa-book-bookmark pe-2 ms-3 mb-3"></i>
+        <label for="SiteName" class="fw-bold">Site Name</label>
+
+        <input  type="text" class="form-control nameinput  w-100 mb-3 ms-3 " id="SiteName" placeholder="Bookmark name" required="">
+
+      </div>
+      <div>
+        <i class="fa-solid fa-link pe-2 ms-3 mb-3"></i>
+        <label for="SiteURL" class="fw-bold">Site URL</label>
+        <input type="text" class="form-control URLinput w-100 mb-4 ms-3" id="SiteURL" placeholder="Bookmark name" required="">
+      </div>
+      <br>
+    </div>
+    <div class="text-center">
+      <button type="submit" id="submit" class="btn btn-secondary ps-5 pe-5">Submit</button>
+    </div>
+    <p class="text-center">...................................
+
+
+      ............................................................................................................................................................................................................................................................................................................
+    </p>
+
+    <table class="table text-white text-center w-75 mx-auto">
+      <thead>
+        <th>Index</th>
+        <th>Website name</th>
+        <th>Viste</th>
+        <th>Delete</th>
+      </thead>
+
+      <tbody id="tbody">
+        <tr>
+
+          <td></td>
+          <td></td>
+          <td><button class=" btn btn-sm btn-info">
+              <i class="fa-solid fa-eye pe-2"></i>
+              Viste</button></td>
+          <td><button class=" btn btn-sm btn-danger">
+              <i class="fa-solid fa-trash-can pe-2"></i>
+              Delete</button></td>
+        </tr>
+
+      </tbody>
+
+
+    </table>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>

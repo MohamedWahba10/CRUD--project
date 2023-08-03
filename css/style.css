@@ -1,0 +1,31 @@
+body{
+
+    background-color: rgb(238, 229, 218);
+}
+.gradient-text {
+    background: linear-gradient(to right, #0f048b, #db0d0d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  h1{
+font-size: 60px;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Pacifico', cursive;
+  }
+  h1::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+
+    width: 320px;
+    height: 35%;
+    background-color: rgb(86, 127, 224);
+    z-index: -1;
+    transition: height 0.3s ease-in-out;
+  }
+
+  h1:hover::before {
+    height: 60%;
+  }
